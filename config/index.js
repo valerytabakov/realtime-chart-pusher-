@@ -29,11 +29,11 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/expense/add': {
-        target: 'https://clever-roentgen-a9b46c.netlify.com/:5000',
+        target: 'https://clever-roentgen-a9b46c.netlify.com:5000',
         changeOrigin: true
       },
       '/finances': {
-        target: 'https://clever-roentgen-a9b46c.netlify.com/:5000',
+        target: 'https://clever-roentgen-a9b46c.netlify.com:5000',
         changeOrigin: true
       },
     },
