@@ -23,17 +23,17 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: 8085,
+    port: 8080,
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
       '/expense/add': {
-        target: 'https://clever-roentgen-a9b46c.netlify.com:5001',
+        target: 'http://clever-roentgen-a9b46c.netlify.com:5000',
         changeOrigin: true
       },
       '/finances': {
-        target: 'https://clever-roentgen-a9b46c.netlify.com:5001',
+        target: 'http://clever-roentgen-a9b46c.netlify.com:5000',
         changeOrigin: true
       },
     },
